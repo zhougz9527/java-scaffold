@@ -1,0 +1,130 @@
+spring:
+  profiles:
+    active: dev
+
+---
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+spring:
+  profiles: dev
+  redis:
+    database: 0
+    timeout: 6000
+    host: 127.0.0.1
+    port: 6379
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/local_test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true&allowMultiQueries=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 1000
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+debug: true
+logging:
+  level:
+    com.base.service.mapper: debug
+
+---
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+spring:
+  profiles: test
+  redis:
+    database: 0
+    timeout: 6000
+    host: 127.0.0.1
+    port: 6379
+
+  datasource:
+    url:
+    driver-class-name:
+    username:
+    password:
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 1000
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+debug: true
+logging:
+  level:
+    com.base.service.mapper: debug
+
+---
+
+spring:
+  profiles: uata
+  redis:
+    database: 0
+    timeout: 6000
+    host: 127.0.0.1
+    port: 6379
+
+  datasource:
+    url:
+    driver-class-name:
+    username:
+    password:
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 1000
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+debug: true
+logging:
+  level:
+    com.base.service.mapper: debug
+
+---
+
+spring:
+  profiles: prod
+  redis:
+    database: 0
+    timeout: 6000
+    host: 127.0.0.1
+    port: 6379
+
+  datasource:
+    url:
+    driver-class-name:
+    username:
+    password:
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 1000
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+debug: true
+logging:
+  level:
+    com.base.service.mapper: debug

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.base</groupId>
+    <artifactId>java-scaffold</artifactId>
+    <version>0.0.1</version>
+    <name>java-scaffold</name>
+    <packaging>pom</packaging>
+    <description>javascaffold project for Spring Boot</description>
+    <modules>
+        <module>api</module>
+        <module>admin</module>
+        <module>service</module>
+        <module>common</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <common.version>0.0.1</common.version>
+        <service.version>0.0.1</service.version>
+        <spring-boot-starter-parent.version>2.2.0.RELEASE</spring-boot-starter-parent.version>
+        <mybatis-plus-boot-starter.version>3.1.0</mybatis-plus-boot-starter.version>
+        <spring-boot-starter-data-redis.vasion>2.2.2.RELEASE</spring-boot-starter-data-redis.vasion>
+        <log4j.version>1.2.17</log4j.version>
+        <mybatis-plus-generator.version>3.2.0</mybatis-plus-generator.version>
+        <org-slf4j.version>1.7.25</org-slf4j.version>
+        <fastjson.version>1.2.68</fastjson.version>
+        <okhttp.version>4.2.2</okhttp.version>
+        <p6spy.version>3.9.0</p6spy.version>
+        <mysql-connector-java.version>8.0.20</mysql-connector-java.version>
+        <lombok.version>1.18.12</lombok.version>
+        <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+        <springfox-swagger-ui.version>2.9.2</springfox-swagger-ui.version>
+        <velocity-engine-core.version>2.2</velocity-engine-core.version>
+        <hibernate-validator.version>5.1.0.Final</hibernate-validator.version>
+        <validation-api.version>1.1.0.Final</validation-api.version>
+        <org-apache-logging-log4j.version>2.12.1</org-apache-logging-log4j.version>
+        <junit.version>4.4</junit.version>
+    </properties>
+
+</project>
